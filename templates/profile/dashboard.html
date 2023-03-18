@@ -1,0 +1,48 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Edenthought | Dashboard</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    </head>
+
+    {% include 'base.html' %}
+    <br>
+
+
+    <body>
+        <br>
+        <div class="container bg-white shadow-md p-5">            
+            
+            <h3>Your Dashboard</h3>
+            <a href="{% url 'user-logout' %}">Logout</a>
+            
+            <br><br>
+            
+    
+
+        </div>
+        <br>
+
+        <div class="container bg-white shadow-md p-5">
+            <p>Manage your profile and settings: For instance you may want to upload a <strong> profile picture</strong></strohg></p>
+        
+            <a class="btn btn-secondary btn-lg w-100 btn-block p-4" type="button"  href="{% url 'profile-management' %}">Profile management</a>
+
+        </div>
+
+
+
+
+    </body>
+    
+</html>
